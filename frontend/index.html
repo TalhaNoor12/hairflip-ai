@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Primary Meta -->
+    <title>HairFlip — AI Hairstyle Try-On</title>
+    <meta name="description" 
+      content="Try 20+ hairstyles on your own photo instantly with AI. Free to use. No account needed. Results in 10 seconds.">
+    <meta name="keywords" 
+      content="hairstyle try on, AI hairstyle, virtual haircut, hair transformation">
+    
+    <!-- Open Graph — for LinkedIn and Facebook previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hairflip-ai.vercel.app">
+    <meta property="og:title" content="HairFlip — AI Hairstyle Try-On">
+    <meta property="og:description" content="Try 20+ hairstyles on your own photo instantly. Free. No account needed.">
+    <meta property="og:image" content="https://hairflip-ai.vercel.app/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HairFlip — AI Hairstyle Try-On">
+    <meta name="twitter:description" content="Try 20+ hairstyles on your photo with AI. Free. Results in 10 seconds.">
+    <meta name="twitter:image" content="https://hairflip-ai.vercel.app/og-image.png">
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#7C3AED">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="HairFlip">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Anti-flash dark mode script -->
+    <script>
+      (function() {
+        const saved = localStorage.getItem('hairflip-theme');
+        const prefersDark = window.matchMedia(
+          '(prefers-color-scheme: dark)'
+        ).matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

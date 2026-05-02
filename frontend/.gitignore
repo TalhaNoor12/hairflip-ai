@@ -1,0 +1,29 @@
+# Environment variables — NEVER commit
+.env
+.env.local
+.env.production
+.env.development
+.env*.local
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Vite
+*.local
