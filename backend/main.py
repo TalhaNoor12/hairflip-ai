@@ -11,7 +11,7 @@ import asyncio
 
 load_dotenv()
 
-app = FastAPI(title="HairFlip API")
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
